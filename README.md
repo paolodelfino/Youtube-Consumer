@@ -16,6 +16,10 @@ npm install
 npm start
 ```
 
+## Template
+
+This project uses [this](https://github.com/paolodelfino/Node.JS-Template) as a template.
+
 ## License
 
-Apache 2.0
+[Apache 2.0](./LICENSE)
