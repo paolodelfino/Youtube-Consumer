@@ -1,0 +1,32 @@
+/* Do not touch this three lines */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#display > div {
+  @apply flex flex-col justify-center bg-base-300 p-4 hover:bg-base-200 hover:shadow-md hover:shadow-base-200 active:ring-2 active:ring-base-200 hover:cursor-pointer select-none;
+}
+
+#display > div > div:nth-child(1) {
+  @apply flex flex-row justify-start items-center gap-3;
+}
+
+#display > div > div:nth-child(1) > span {
+  @apply text-lg font-bold;
+}
+
+#display > div > div:nth-child(2) {
+  @apply flex flex-col w-full my-4 mt-8 gap-2;
+}
+
+#display > div > div:nth-child(2) > div {
+  @apply flex flex-row justify-center w-full text-center;
+}
+
+#display > div > div:nth-child(3) {
+  @apply flex flex-row justify-end w-full mt-6;
+}
+
+#display > div > div:nth-child(3) > span {
+  @apply text-secondary text-sm;
+}

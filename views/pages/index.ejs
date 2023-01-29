@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include ("../partials/header.ejs") %>
+  </head>
+
+  <body>
+    <%- include ("../partials/searchbar.ejs") %>
+    <ul class="collapsible mt-0">
+      <li>
+        <div class="collapsible-header">
+          More <i class="material-icons ml-auto">unfold_more</i>
+        </div>
+        <div class="collapsible-body">
+          <div class="input-field col s12">
+            <input id="url" type="text" class="validate" />
+            <label for="url">Url</label>
+          </div>
+          <div
+            class="flex flex-col justify-start w-full border rounded-lg border-base-300 py-3 px-4"
+          >
+            <span class="text-lg mb-3">Settings</span>
+            <label>
+              <input
+                type="checkbox"
+                class="filled-in"
+                id="only-audio"
+              />
+              <span>Only Audio</span>
+            </label>
+          </div>
+          <div class="flex flex-row w-full justify-end mt-2">
+            <a id="download-from-url" class="waves-effect waves-light btn">Download</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-4 pt-6 pb-4 pl-2 pr-2 md:pl-4 md:pr-4"
+      id="display"
+    ></div>
+
+    <%- include ("../partials/actionsbar.ejs") %> <%- include
+    ("../partials/scripts.ejs") %>
+  </body>
+</html>
